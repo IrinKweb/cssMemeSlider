@@ -1,1 +1,1 @@
-[# cssMemeSlider] (https://irinkweb.github.io/cssMemeSlider/cssMemeSlider/index.html)
+[# cssMemeSlider](https://irinkweb.github.io/cssMemeSlider/cssMemeSlider/index.html)
