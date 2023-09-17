@@ -5,8 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemeSlider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="container">
+        <div class="wrapper">
+            <div class="header">
+                <h1> Пять самых живописных маяков мира</h1>
+            </div>
+            <div class="slider">
+                <input class="radio" type="radio" name="slider" id="slide1" checked>
+                <input class="radio" type="radio" name="slider" id="slide2">
+                <input class="radio" type="radio" name="slider" id="slide3">
+                <input class="radio" type="radio" name="slider" id="slide4">
+                <input class="radio" type="radio" name="slider" id="slide5">
+
+                <div class="slider__items">
+                    <img class="slider__img s1" src="./img/img_1.jpeg" alt="img1">
+                    <img class="slider__img" src="./img/img_2.jpeg" alt="img2">
+                    <img class="slider__img" src="./img/img_3.jpeg" alt="img3">
+                    <img class="slider__img" src="./img/img_4.jpeg" alt="img4">
+                    <img class="slider__img" src="./img/img_5.jpeg" alt="img5">
+                </div>
+
+                <div class="second__container">
+                    <div class="content__container">
+                        <p class="slider__text s2">Маяк Каллур, Фарерские острова</p>
+                        <p class="slider__text">Маяк Линдау, Линдау, Германия</p>
+                        <p class="slider__text">Башня Геркулеса, Ла-Корунья, Испания</p>
+                        <p class="slider__text">Маяк Фанад, Ирландия</p>
+                        <p class="slider__text">Маяк святой Марии, Великобритания</p>
+                    </div>
+
+                    <div class="slider__nav">
+                        <label class="slider__btn" for="slide1">
+                            <div class="toolip"></div>
+                        </label>
+                        <label class="slider__btn" for="slide2">
+                            <div class="toolip"></div>
+                        </label>
+                        <label class="slider__btn" for="slide3">
+                            <div class="toolip"></div>
+                        </label>
+                        <label class="slider__btn" for="slide4">
+                            <div class="toolip"></div>
+                        </label>
+                        <label class="slider__btn" for="slide5">
+                            <div class="toolip"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 </html>

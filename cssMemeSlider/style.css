@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+
+.container {
+    padding: 2em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider__items {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.slider__img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.second__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.content__container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    overflow: hidden;
+}
+
+.slider__text {
+    flex: 1 0 100%;
+    transition: 0.5s ease;
+}
+
+.slider__nav {
+    display: flex;
+    gap: 0.6em;
+}
+
+.slider__btn {
+    width: 0.6em;
+    height: 0.6em;
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.toolip {
+    cursor: pointer;
+}
+
+
+input[name="slider"] {
+    display: none;
+}
+
+  #slide1:checked~.second__container .slider__nav .slider__btn[for="slide1"],
+  #slide2:checked~.second__container .slider__nav .slider__btn[for="slide2"],
+  #slide3:checked~.second__container .slider__nav .slider__btn[for="slide3"],
+  #slide4:checked~.second__container .slider__nav .slider__btn[for="slide4"],
+  #slide5:checked~.second__container .slider__nav .slider__btn[for="slide5"] {
+    background-color: transparent;
+  }
+
+  #slide1:checked~.slider__items .s1,
+  #slide1:checked~.second__container .content__container .s2 {
+    margin-left: 0;
+  }
+
+  #slide2:checked~.slider__items .s1,
+  #slide2:checked~.second__container .content__container .s2 {
+    margin-left: -100%;
+  }
+
+  #slide3:checked~.slider__items .s1,
+  #slide3:checked~.second__container .content__container .s2 {
+    margin-left: -200%;
+  }
+
+  #slide4:checked~.slider__items .s1,
+  #slide4:checked~.second__container .content__container .s2 {
+    margin-left: -300%;
+  }
+
+  #slide5:checked~.slider__items .s1,
+  #slide5:checked~.second__container .content__container .s2 {
+    margin-left: -400%;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .second__container {
+      flex-direction: column;
+      gap: 1em;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content__container {
+      width: 100%;
+      align-self: flex-start;
+      order: 2;
+    }
+
+    .slider__nav {
+      margin-top: 0.4em;
+    }
+  }
