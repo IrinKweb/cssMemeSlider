@@ -20,6 +20,8 @@ body {
 .slider__items {
     display: flex;
     margin-bottom: 1em;
+    width: 100%;
+    height: 50%;
 }
 
 .slider__img {
@@ -58,6 +60,10 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.5s ease;
+}
+
+.slider__btn:hover {
+  background-color: black;
 }
 
 .toolip {
@@ -109,7 +115,7 @@ input[name="slider"] {
       gap: 1em;
       align-items: center;
       justify-content: center;
-      
+
     }
 
     .content__container {
